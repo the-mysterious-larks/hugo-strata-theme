@@ -3156,3 +3156,19 @@
 	 font-size: 20px;
 	 line-height: 36px;
  }
+
+.img-wrapper {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	height: 350px;
+}
+
+.featured-image {
+	max-height: 300px;
+	max-width: 100%;;
+}
+
+.work-item {
+	min-height: 500px;
+}

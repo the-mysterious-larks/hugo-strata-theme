@@ -3,7 +3,9 @@
   <div class="row">
     {{ range $index, $element := (where .Data.Pages.ByTitle "Section" "post") }}
     <article class="12u work-item">
-      <img{{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+      <div class="img-wrapper">
+        <img{{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}" class="featured-image">
+      </div>
       <h3>{{ .Title | markdownify }}</h3>
       <p>{{ .Content | markdownify }}</p>
     </article>
