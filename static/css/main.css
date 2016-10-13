@@ -1578,7 +1578,6 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
 		color: #49bf9d;
 		text-decoration: none;
 	}
@@ -2471,7 +2470,7 @@
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 0 0;
+		padding: 2em 4em 0 0;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2503,7 +2502,7 @@
 	#footer {
 		bottom: 0;
 		left: 0;
-		padding: 0 4em 6em 0;
+		padding: 0 4em 1em 0;
 		position: fixed;
 		text-align: right;
 		width: 35%;
@@ -3137,7 +3136,7 @@
 
 	#sidebar ul li {
 		list-style: none;
-		font-size: 1.35em;
+		font-size: 1.15em;
 		line-height: 1.5em;
 	}
 

@@ -9,7 +9,7 @@
 		<nav id="sidebar">
 			<ul>
 			{{ range . }}
-				<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+				<li><a href="{{ .URL }}">{{ .Name }}</a></li>
 			{{ end }}
 			</ul>
 		</nav>

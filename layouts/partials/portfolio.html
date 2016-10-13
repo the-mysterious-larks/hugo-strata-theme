@@ -2,7 +2,7 @@
   {{ with .Site.Params.portfolio.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
   <div class="row">
     {{ range $index, $element := (where .Data.Pages.ByTitle "Section" "post") }}
-    <article class="12u work-item">
+    <article id="portfolio-{{ $index }}" class="12u work-item">
       <div class="img-wrapper">
         <img{{ with .Params.featured_image }} src="{{ . }}"{{ end }} alt="{{ .Title }}" class="featured-image">
       </div>
