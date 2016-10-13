@@ -51,8 +51,6 @@
 /* Box Model */
 
 	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
@@ -219,15 +217,11 @@
 
 	.row {
 		border-bottom: solid 1px transparent;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
 	.row > * {
 		float: left;
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
@@ -1555,13 +1549,9 @@
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-			-moz-animation: none !important;
 			-webkit-animation: none !important;
-			-ms-animation: none !important;
 			animation: none !important;
-			-moz-transition: none !important;
 			-webkit-transition: none !important;
-			-ms-transition: none !important;
 			transition: none !important;
 		}
 
@@ -1574,9 +1564,7 @@
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		color: #49bf9d;
 		text-decoration: none;
@@ -1988,9 +1976,7 @@
 	}
 
 		.image:before {
-			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			background: url("images/overlay.png");
 			border-radius: 0.35em;
@@ -2009,9 +1995,7 @@
 		}
 
 			.image.thumb:after {
-				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
-				-ms-transition: opacity 0.2s ease-in-out;
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
@@ -2323,9 +2307,7 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
@@ -2565,73 +2547,31 @@
 
 /* Poptrox */
 
-	@-moz-keyframes spin {
-		0% {
-			-moz-transform: rotate(0deg);
-			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-
-		100% {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-		}
-	}
-
 	@-webkit-keyframes spin {
 		0% {
-			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
 			transform: rotate(0deg);
 		}
 
 		100% {
-			-moz-transform: rotate(360deg);
 			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
-			transform: rotate(360deg);
-		}
-	}
-
-	@-ms-keyframes spin {
-		0% {
-			-moz-transform: rotate(0deg);
-			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
-			transform: rotate(0deg);
-		}
-
-		100% {
-			-moz-transform: rotate(360deg);
-			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
 			transform: rotate(360deg);
 		}
 	}
 
 	@keyframes spin {
 		0% {
-			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
-			-ms-transform: rotate(0deg);
 			transform: rotate(0deg);
 		}
 
 		100% {
-			-moz-transform: rotate(360deg);
 			-webkit-transform: rotate(360deg);
-			-ms-transform: rotate(360deg);
 			transform: rotate(360deg);
 		}
 	}
 
 	.poptrox-popup {
-		-moz-box-sizing: content-box;
-		-webkit-box-sizing: content-box;
 		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -2644,9 +2584,7 @@
 
 		.poptrox-popup .loader {
 			text-decoration: none;
-			-moz-animation: spin 1s linear infinite;
 			-webkit-animation: spin 1s linear infinite;
-			-ms-animation: spin 1s linear infinite;
 			animation: spin 1s linear infinite;
 			font-size: 1.5em;
 			height: 1em;
@@ -2688,9 +2626,7 @@
 		.poptrox-popup .nav-next,
 		.poptrox-popup .nav-previous {
 			text-decoration: none;
-			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			background: rgba(0, 0, 0, 0.01);
@@ -2745,9 +2681,7 @@
 
 		.poptrox-popup .closer {
 			text-decoration: none;
-			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
-			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			color: #fff;
@@ -2772,8 +2706,6 @@
 			}
 
 			.poptrox-popup .closer:before {
-				-moz-box-sizing: content-box;
-				-webkit-box-sizing: content-box;
 				-ms-box-sizing: content-box;
 				box-sizing: content-box;
 				border-radius: 100%;
@@ -3118,6 +3050,7 @@
 		border: solid 3px #efefef;
 		border-radius: 0.35em;
 		cursor: pointer;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 	}
 
@@ -3157,9 +3090,15 @@
  }
 
 .img-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 	height: 350px;
 }
 
@@ -3170,4 +3109,16 @@
 
 .work-item {
 	min-height: 500px;
+}
+
+.link-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
